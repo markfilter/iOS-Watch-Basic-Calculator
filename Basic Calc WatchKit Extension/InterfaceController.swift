@@ -88,7 +88,7 @@ class InterfaceController: WKInterfaceController {
         currentMode = .Not_Set
         outputString = String(savedNumber)
         updateOutputLabel()
-        lastButtonTappedWasMode = true 
+        lastButtonTappedWasMode = true
         
     }
     
@@ -121,7 +121,12 @@ class InterfaceController: WKInterfaceController {
             return
         }
         savedNumber = (currentMode == .Not_Set) ? newValue : savedNumber
-        outputLabel.setText(String(newValue))
+        
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .decimal
+        let nsNewVal = NSNumber.init(value: newValue)
+        let formattedOutput = formatter.string(from: nsNewVal)
+        outputLabel.setText(formattedOutput)
         
     }
     

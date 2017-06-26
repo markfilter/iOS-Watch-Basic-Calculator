@@ -16,7 +16,7 @@
                     <items>
                         <group width="1" height="0.20000000000000001" alignment="left" id="Mji-fF-QTm">
                             <items>
-                                <label width="1" height="1" alignment="right" text="0" textAlignment="right" id="8Xz-Np-dfL"/>
+                                <label width="1" height="1" alignment="right" text="0" textAlignment="right" minimumScaleFactor="0.5" id="8Xz-Np-dfL"/>
                             </items>
                         </group>
                         <group width="1" height="0.20000000000000001" alignment="left" id="Fiw-kF-JFd">
