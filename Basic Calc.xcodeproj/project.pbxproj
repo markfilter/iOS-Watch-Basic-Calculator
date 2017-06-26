@@ -238,7 +238,6 @@
 				TargetAttributes = {
 					71377CDB1F00CF6600D33C7C = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 2WT8Q9H4B7;
 						ProvisioningStyle = Automatic;
 					};
 					71377CED1F00CF6600D33C7C = {
@@ -536,7 +535,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 2WT8Q9H4B7;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Basic Calc/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.markzfilter.Basic-Calc";
@@ -549,7 +548,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 2WT8Q9H4B7;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Basic Calc/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.markzfilter.Basic-Calc";
