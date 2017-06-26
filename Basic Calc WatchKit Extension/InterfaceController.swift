@@ -51,12 +51,15 @@ class InterfaceController: WKInterfaceController {
     // MARK: - Actions
     
     @IBAction func addButtonTapped() {
-        
+        changeMode(mode: .Addition)
     }
     
+    
     @IBAction func subtractButtonTapped() {
-        
+        changeMode(mode: .Subtraction)
     }
+    
+    
     @IBAction func clearButtonTapped() {
         savedNumber = 0
         outputString = "0"
@@ -65,16 +68,51 @@ class InterfaceController: WKInterfaceController {
         lastButtonTappedWasMode = false 
     }
     
+    
     @IBAction func equalsButtonTapped() {
+        guard let number: Int64 = Int64(outputString) else {
+            return
+        }
+        
+        if currentMode == .Not_Set || lastButtonTappedWasMode {
+            return
+        }
+        
+        if currentMode == .Addition {
+            savedNumber += number
+        }
+        else if currentMode == .Subtraction {
+            savedNumber -= number
+        }
+        
+        currentMode = .Not_Set
+        outputString = String(savedNumber)
+        updateOutputLabel()
+        lastButtonTappedWasMode = true 
         
     }
     
     
+    func changeMode(mode: Mode) {
+        if savedNumber == 0 {
+            return
+        }
+        currentMode = mode
+        lastButtonTappedWasMode = true
+    }
+    
+    
+    
+    
     func numberTapped(number: Int) {
+        
+        if lastButtonTappedWasMode {
+            lastButtonTappedWasMode = false
+            outputString = "0"
+        }
+        
         outputString.append(String(number))
-        
         updateOutputLabel()
-        
     }
     
     func updateOutputLabel() {
@@ -82,7 +120,7 @@ class InterfaceController: WKInterfaceController {
             outputLabel.setText("Error: Number is too large")
             return
         }
-        
+        savedNumber = (currentMode == .Not_Set) ? newValue : savedNumber
         outputLabel.setText(String(newValue))
         
     }

@@ -16,27 +16,27 @@
                     <items>
                         <group width="1" height="0.20000000000000001" alignment="left" id="Mji-fF-QTm">
                             <items>
-                                <label alignment="right" text="0" textAlignment="right" id="8Xz-Np-dfL"/>
+                                <label width="1" height="1" alignment="right" text="0" textAlignment="right" id="8Xz-Np-dfL"/>
                             </items>
                         </group>
                         <group width="1" height="0.20000000000000001" alignment="left" id="Fiw-kF-JFd">
                             <items>
-                                <button width="0.25" alignment="left" title="7" id="m6B-CU-Djp">
+                                <button width="0.25" height="1" alignment="left" title="7" id="m6B-CU-Djp">
                                     <connections>
                                         <action selector="tapped7" destination="AgC-eL-Hgc" id="y8A-Gg-fKF"/>
                                     </connections>
                                 </button>
-                                <button width="0.25" alignment="left" title="8" id="dy2-OS-Li4">
+                                <button width="0.25" height="1" alignment="left" title="8" id="dy2-OS-Li4">
                                     <connections>
                                         <action selector="tapped8" destination="AgC-eL-Hgc" id="KDC-w7-aol"/>
                                     </connections>
                                 </button>
-                                <button width="0.25" alignment="left" title="9" id="HEr-qV-4ro">
+                                <button width="0.25" height="1" alignment="left" title="9" id="HEr-qV-4ro">
                                     <connections>
                                         <action selector="tapped9" destination="AgC-eL-Hgc" id="Rd0-Ic-WpS"/>
                                     </connections>
                                 </button>
-                                <button width="0.25" alignment="left" title="+" id="cp2-4i-plK">
+                                <button width="0.25" height="1" alignment="left" title="+" id="cp2-4i-plK">
                                     <color key="backgroundColor" red="1" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                     <connections>
                                         <action selector="addButtonTapped" destination="AgC-eL-Hgc" id="bNq-k5-0gh"/>
@@ -46,22 +46,22 @@
                         </group>
                         <group width="1" height="0.20000000000000001" alignment="left" id="3Mw-38-Llu">
                             <items>
-                                <button width="0.25" alignment="left" title="4" id="oMt-Bg-6NY">
+                                <button width="0.25" height="1" alignment="left" title="4" id="oMt-Bg-6NY">
                                     <connections>
                                         <action selector="tapped4" destination="AgC-eL-Hgc" id="cOR-Kt-Zjx"/>
                                     </connections>
                                 </button>
-                                <button width="0.25" alignment="left" title="5" id="XI6-Ns-qB9">
+                                <button width="0.25" height="1" alignment="left" title="5" id="XI6-Ns-qB9">
                                     <connections>
                                         <action selector="tapped5" destination="AgC-eL-Hgc" id="Ifu-Yk-eTW"/>
                                     </connections>
                                 </button>
-                                <button width="0.25" alignment="left" title="6" id="x7g-l1-MZd">
+                                <button width="0.25" height="1" alignment="left" title="6" id="x7g-l1-MZd">
                                     <connections>
                                         <action selector="tapped6" destination="AgC-eL-Hgc" id="7fd-3C-3BH"/>
                                     </connections>
                                 </button>
-                                <button width="0.25" alignment="left" title="-" id="BW6-YZ-cUk">
+                                <button width="0.25" height="1" alignment="left" title="-" id="BW6-YZ-cUk">
                                     <color key="backgroundColor" red="1" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                     <connections>
                                         <action selector="subtractButtonTapped" destination="AgC-eL-Hgc" id="mIX-vC-fbO"/>
@@ -71,22 +71,22 @@
                         </group>
                         <group width="1" height="0.20000000000000001" alignment="left" id="nWJ-Ya-nyv">
                             <items>
-                                <button width="0.25" alignment="left" title="1" id="8iG-Ok-DQK">
+                                <button width="0.25" height="1" alignment="left" title="1" id="8iG-Ok-DQK">
                                     <connections>
                                         <action selector="tapped1" destination="AgC-eL-Hgc" id="Lb3-Vg-q5d"/>
                                     </connections>
                                 </button>
-                                <button width="0.25" alignment="left" title="2" id="bNx-ez-J9W">
+                                <button width="0.25" height="1" alignment="left" title="2" id="bNx-ez-J9W">
                                     <connections>
                                         <action selector="tapped2" destination="AgC-eL-Hgc" id="0zy-zO-NAC"/>
                                     </connections>
                                 </button>
-                                <button width="0.25" alignment="left" title="3" id="EJ2-kI-9VI">
+                                <button width="0.25" height="1" alignment="left" title="3" id="EJ2-kI-9VI">
                                     <connections>
                                         <action selector="tapped3" destination="AgC-eL-Hgc" id="WqI-YR-3Mg"/>
                                     </connections>
                                 </button>
-                                <button width="0.25" alignment="left" title="C" id="iTX-V8-gSq">
+                                <button width="0.25" height="1" alignment="left" title="C" id="iTX-V8-gSq">
                                     <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <connections>
                                         <action selector="clearButtonTapped" destination="AgC-eL-Hgc" id="PIc-HG-Q0m"/>
@@ -96,12 +96,12 @@
                         </group>
                         <group width="1" height="0.20000000000000001" alignment="left" id="5zh-EJ-g2T">
                             <items>
-                                <button width="0.75" alignment="left" title="0" id="Nje-Sv-GOE">
+                                <button width="0.75" height="1" alignment="left" title="0" id="Nje-Sv-GOE">
                                     <connections>
                                         <action selector="tapped0" destination="AgC-eL-Hgc" id="K4t-bP-1QE"/>
                                     </connections>
                                 </button>
-                                <button width="0.25" alignment="left" title="=" id="VnR-3K-xvp">
+                                <button width="0.25" height="1" alignment="left" title="=" id="VnR-3K-xvp">
                                     <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <connections>
                                         <action selector="equalsButtonTapped" destination="AgC-eL-Hgc" id="g7z-Wj-kBS"/>
