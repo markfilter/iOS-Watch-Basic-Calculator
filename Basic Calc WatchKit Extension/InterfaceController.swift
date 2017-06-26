@@ -10,12 +10,31 @@ import WatchKit
 import Foundation
 
 
-class InterfaceController: WKInterfaceController {
+enum Mode {
+    case Not_Set
+    case Addition
+    case Subtraction
+}
 
+
+class InterfaceController: WKInterfaceController {
+    
+    
+    // MARK: - Outlet
+    @IBOutlet var outputLabel: WKInterfaceLabel!
+    var outputString: String = "0"
+    var currentMode: Mode = .Not_Set
+    var savedNumber: Int64 = 0
+    var lastButtonTappedWasMode: Bool = false
+    
+    
+    
+    // MARK: - View Life Cycle Methods
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
         // Configure interface objects here.
+        outputLabel.setText(outputString);
     }
     
     override func willActivate() {
@@ -26,6 +45,88 @@ class InterfaceController: WKInterfaceController {
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
+    }
+    
+    
+    // MARK: - Actions
+    
+    @IBAction func addButtonTapped() {
+        
+    }
+    
+    @IBAction func subtractButtonTapped() {
+        
+    }
+    @IBAction func clearButtonTapped() {
+        savedNumber = 0
+        outputString = "0"
+        outputLabel.setText(outputString)
+        currentMode = .Not_Set
+        lastButtonTappedWasMode = false 
+    }
+    
+    @IBAction func equalsButtonTapped() {
+        
+    }
+    
+    
+    func numberTapped(number: Int) {
+        outputString.append(String(number))
+        
+        updateOutputLabel()
+        
+    }
+    
+    func updateOutputLabel() {
+        guard let newValue = Int64(outputString) else {
+            outputLabel.setText("Error: Number is too large")
+            return
+        }
+        
+        outputLabel.setText(String(newValue))
+        
+    }
+    
+    
+    
+    @IBAction func tapped0() {
+        numberTapped(number: 0)
+    }
+    
+    @IBAction func tapped1() {
+        numberTapped(number: 1)
+    }
+    
+    @IBAction func tapped2() {
+        numberTapped(number: 2)
+    }
+    
+    @IBAction func tapped3() {
+        numberTapped(number: 3)
+    }
+    
+    @IBAction func tapped4() {
+        numberTapped(number: 4)
+    }
+    
+    @IBAction func tapped5() {
+        numberTapped(number: 5)
+    }
+    
+    @IBAction func tapped6() {
+        numberTapped(number: 6)
+    }
+    
+    @IBAction func tapped7() {
+        numberTapped(number: 7)
+    }
+    
+    @IBAction func tapped8() {
+        numberTapped(number: 8)
+    }
+    
+    @IBAction func tapped9() {
+        numberTapped(number: 9)
     }
 
 }
